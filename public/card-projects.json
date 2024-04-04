@@ -1,12 +1,20 @@
 {
     "contentCard": [
         {
+            "name": "autista-live",
+            "linkPage": "/src/pages/autista-live.html",
+            "imgLink": "/assets/projects/autista-live/cover.opti.webp",
+            "alt-img": "Capa projeto Autista Live",
+            "title": "Plataforma Autista Live",
+            "description": "Uma plataforma web que traz facilidade para pessoas com autismo comprovar seu diagnóstico de maneira simples."
+        },
+        {
             "name": "pop-cinema",
             "linkPage": "/src/pages/pop-cinema.html",
             "imgLink": "/assets/projects/pop-cinema/cover-card.opti.webp",
             "alt-img": "Capa projeto pop cinema",
             "title": "Aplicativo Pop Cinema",
-            "description": "Criar uma solução com base nos conhecimentos adquiridos durante os seis meses do curso de UX do Google"
+            "description": "Criar uma solução com base nos conhecimentos adquiridos durante os seis meses do curso de UX do Google."
         },
         {
             "name": "Lit academy",
@@ -14,7 +22,7 @@
             "imgLink": "/assets/projects/lit-academy/cover-card.opti.webp",
             "alt-img": "Capa projeto Lit academy",
             "title": "Landing Page Lit Academy",
-            "description": "Um desafio lançado na comunidade de design da Lit Academy onde iremos explorar o mundo das IAs"
+            "description": "Um desafio lançado na comunidade de design da Lit Academy onde iremos explorar o mundo das IAs."
         },
         {
             "name": "Company Geradores",

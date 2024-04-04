@@ -13,9 +13,11 @@
   color: var(--bg-constrast-light);
   box-shadow: $effect-shadow-default;
   cursor: pointer;
+  transition: 0.2s ease;
 
   &:hover {
     box-shadow: $effect-shadow-hover;
+    color: var(--cl-feedback-info);
   }
 
   &:focus {

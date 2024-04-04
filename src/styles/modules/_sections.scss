@@ -249,6 +249,11 @@ header {
       color: var(--bg-constrast-light);
     }
 
+    a{
+      max-width: 14rem;
+      margin-top: $sp-24;
+    }
+
    
 
   .svg-container {
@@ -311,7 +316,7 @@ header {
     position: relative;
     width: 40%;
     margin-top: $sp-32;
-    padding: $sp-16;
+    padding: $sp-24;
     background-color: var(--bg-primary);
     box-shadow: $effect-shadow-default;
     transition: 0.5s;
@@ -334,7 +339,8 @@ header {
 
     h3 {
       font-size: $fs-20;
-      color: var(--bg-constrast-light);
+      font-weight: $fw-medium;
+      color: var(--cl-black-200);
     }
 
     p {
@@ -572,8 +578,14 @@ header {
     }
   }
 
+  .content-certificates{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: $sp-32;
+  }
+
   .certificate-box {
-    width: 60%;
+    width: 100%;
     margin: auto;
     margin-top: $sp-32;
     display: flex;
@@ -697,6 +709,7 @@ header {
       h4, h5 {
         text-align: center;
         font-size: $fs-20;
+        font-weight: $fw-medium;
         color: var(--bg-constrast-light);
       }
 
@@ -732,7 +745,7 @@ header {
           p {
             margin: 0;
             font-size: $fs-14;
-            font-weight: $fw-bold;
+            font-weight: $fw-medium;
             color: var(--cl-black-300);
           }
         }
@@ -932,6 +945,7 @@ footer {
 
     h2 {
       font-size: $fs-28;
+      font-weight: $fw-medium;
       color: var(--cl-black-200);
       padding: 0 $sp-16;
     }
@@ -968,6 +982,7 @@ footer {
         width: 70%;
         padding: 0 $sp-16;
         font-size: $fs-28;
+        font-weight: $fw-medium;
         color: var(--cl-black-200);
       }
 
@@ -976,6 +991,7 @@ footer {
 
         h4 {
           font-size: $fs-20;
+          font-weight: $fw-medium;
           color: var(--bg-constrast-light);
         }
 

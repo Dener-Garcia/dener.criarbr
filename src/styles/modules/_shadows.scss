@@ -1,6 +1,6 @@
-$effect-shadow-default: -8px -8px 14px var(--cl-white-pure), 8px 8px 14px var( --cl-shadow-effect-default);
+$effect-shadow-default: -12px -12px 24px var(--cl-black-1000), 8px 8px 14px var( --cl-shadow-effect-default);
 
-$effect-shadow-hover: 8px 8px 14px var(--cl-shadow-effect-hover), inset -8px -8px 14px var(--cl-shadow-effect-hover);
+$effect-shadow-hover: 8px 8px 24px var(--cl-shadow-effect-hover), inset -8px -8px 14px var(--cl-shadow-effect-hover);
 
-$effect-shadow-active: inset -8px -8px 14px var(--cl-white-pure), inset 8px 8px 14px var(--cl-shadow-effect-hover);
+$effect-shadow-active: inset -8px -8px 24px var(--cl-black-1000), inset 8px 8px 24px var(--cl-shadow-effect-hover);
 

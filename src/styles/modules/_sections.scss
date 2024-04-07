@@ -37,6 +37,7 @@ aside {
       align-items: center;
       justify-content: center;
       padding: $sp-24;
+      border-radius: $fs-16;
       background-color: var(--bg-primary);
       box-shadow: $effect-shadow-default;
 
@@ -315,8 +316,9 @@ header {
   .text-box {
     position: relative;
     width: 40%;
-    margin-top: $sp-32;
+    margin-top: $sp-80;
     padding: $sp-24;
+    border-radius: $fs-16;
     background-color: var(--bg-primary);
     box-shadow: $effect-shadow-default;
     transition: 0.5s;
@@ -400,13 +402,14 @@ header {
   }
 
   p {
-    margin-top: $sp-32;
+    margin-top: $sp-24;
     text-align: center;
     font-size: $fs-20;
     color: var(--cl-black-300)
   }
 
   .grid-projects {
+    margin-top: $sp-40;
     display: grid;
     justify-content: center;
     gap: $sp-32;
@@ -420,6 +423,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: $sp-24;
+    border-radius: $fs-16;
     background-color: var(--bg-primary);
     box-shadow: $effect-shadow-default;
 
@@ -452,7 +456,7 @@ header {
 
 }
 
-.contact {
+.about {
   margin: auto;
 
   h2 {
@@ -481,73 +485,129 @@ header {
     }
   }
 
-  form {
-    width: 60%;
-    margin: $sp-32 auto;
-    display: grid;
-    padding: $sp-40;
-    background-color: var(--bg-primary);
-    box-shadow: $effect-shadow-default;
-    gap: $sp-24;
+  .about-resume{
+
+    margin-top: $sp-24;
+
+    p {
+      margin-top: $sp-8;
+      text-align: start;
+      font-size: $fs-20;
+      color: var(--cl-black-300)
+    }
+  
+  }
+
+  .about-me {
+    margin-top: $sp-40;
+    display: flex;
 
     @media screen and (max-width: 60rem) {
-      width: 100%;
+      flex-direction: column-reverse;
     }
 
-    .field {
+    .stacks {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-      label {
+      h4, h5 {
+        text-align: center;
+        font-size: $fs-20;
         font-weight: $fw-medium;
         color: var(--bg-constrast-light);
       }
 
-      input,
-      textarea {
+      h5{
+        margin-top: $sp-40;
+      }
+
+      .stack-container {
         width: 100%;
-        margin-top: $sp-8;
-        padding: $sp-8 $sp-16;
-        font-size: $fs-16;
-        border-radius: $sp-8;
-        color: var(--bg-constrast-light);
-        background-color: var(--bg-primary);
+        margin-top: $sp-40;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(6.25rem, auto));
+        padding: $sp-24;
+        gap: $sp-32;
+        overflow: hidden;
+
+        @media screen and (max-width: 60rem) {
+          grid-template-columns: repeat(auto-fit, minmax(7.5rem, auto));
+        }
+
+        .stack {
+          width: auto;
+          display: flex;
+          align-items: center;
+          gap: $sp-16;
+          transition: 0.5s;
+
+          i {
+            width: auto;
+            font-size: $fs-28;
+            padding: $sp-8;
+            border-radius: 3.125rem;
+            background-color: var(--bg-primary);
+            color: var(--bg-constrast-light);
+            box-shadow: $effect-shadow-hover;
+          }
+
+          p {
+            margin: 0;
+            font-size: $fs-14;
+            font-weight: $fw-medium;
+            color: var(--cl-black-300);
+          }
+        }
+      }
+
+      .social-icons {
+        width: 100%;
+        margin-top: $sp-40;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(6.25rem, auto));
+        padding: $sp-24;
+        gap: $sp-40;
+
+        @media screen and (max-width: 60rem) {
+          
+        }
+      }
+
+      .social-icons a {
+        min-width: 1rem;
+        width: auto;
+        margin: auto;
+        padding: 0.75rem;
+        font-size: $fs-32;
+      }
+    }
+
+    .about-photo {
+      width: auto;
+      padding: $sp-24;
+      border-radius: $fs-16;
+      background-color: var(--bg-primary);
+      box-shadow: $effect-shadow-default;
+
+      @media screen and (max-width: 60rem) {
+        margin-bottom: $sp-40;
+      }
+
+
+      img {
+        width: 100%;
+        padding: $sp-16;
+        border-radius: $fs-8;
         box-shadow: $effect-shadow-active;
-        transition: 0.2s;
-      }
-
-      textarea {
-        resize: vertical;
-      }
-
-      input:focus,
-      textarea:focus {
-        font-size: $fs-18;
-      }
-
-      ::placeholder {
-        color: var(--cl-black-500);
-        opacity: 1;
-      }
-
-      legend {
-        margin-top: $sp-8;
-        font-size: $fs-14;
-        color: var(--cl-feedback-error);
+        background-color: var(--bg-primary);
       }
     }
-
-    button {
-      margin-top: $sp-8;
-      font-size: $fs-18;
-      font-weight: $fw-medium;
-      gap: $fs-16;
-
-      i {
-        font-size: $fs-24;
-      }
-    }
-
   }
 }
+
+
 
 .certificates {
   margin: auto;
@@ -579,18 +639,25 @@ header {
   }
 
   .content-certificates{
+    margin-top: $sp-40;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: $sp-32;
+
+    @media screen and (max-width: 60rem) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   .certificate-box {
     width: 100%;
     margin: auto;
-    margin-top: $sp-32;
+    margin-top: $sp-40;
     display: flex;
     align-items: center;
     padding: $sp-24;
+    border-radius: $sp-16;
     background-color: var(--bg-primary);
     box-shadow: $effect-shadow-default;
     gap: $sp-32;
@@ -652,7 +719,7 @@ header {
   }
 }
 
-.about {
+.contact {
   margin: auto;
 
   h2 {
@@ -681,116 +748,72 @@ header {
     }
   }
 
-  p {
-    margin-top: $sp-32;
-    text-align: start;
-    font-size: $fs-20;
-    color: var(--cl-black-300)
-  }
-
-  p:nth-child(3) {
-    margin-top: $sp-8;
-  }
-
-  .about-me {
-    margin-top: $sp-32;
-    display: flex;
+  form {
+    width: 60%;
+    margin: $sp-80 auto;
+    display: grid;
+    padding: $sp-40;
+    border-radius: $sp-16;
+    background-color: var(--bg-primary);
+    box-shadow: $effect-shadow-default;
+    gap: $sp-24;
 
     @media screen and (max-width: 60rem) {
-      flex-direction: column-reverse;
+      width: 100%;
     }
 
-    .stacks {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    .field {
 
-      h4, h5 {
-        text-align: center;
-        font-size: $fs-20;
+      label {
         font-weight: $fw-medium;
         color: var(--bg-constrast-light);
       }
 
-      .stack-container {
+      input,
+      textarea {
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(6.25rem, auto));
-        padding: $sp-24;
-        gap: $sp-32;
-        overflow: hidden;
-
-        @media screen and (max-width: 60rem) {
-          grid-template-columns: repeat(auto-fit, minmax(7.5rem, auto));
-        }
-
-        .stack {
-          width: auto;
-          display: flex;
-          align-items: center;
-          gap: $sp-16;
-          transition: 0.5s;
-
-          i {
-            width: auto;
-            font-size: $fs-28;
-            padding: $sp-8;
-            border-radius: 3.125rem;
-            background-color: var(--bg-primary);
-            color: var(--bg-constrast-light);
-            box-shadow: $effect-shadow-hover;
-          }
-
-          p {
-            margin: 0;
-            font-size: $fs-14;
-            font-weight: $fw-medium;
-            color: var(--cl-black-300);
-          }
-        }
-      }
-
-      .social-icons {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(6.25rem, auto));
-        padding: $sp-24;
-        gap: $sp-40;
-
-        @media screen and (max-width: 60rem) {
-          
-        }
-      }
-
-      .social-icons a {
-        min-width: 1rem;
-        width: auto;
-        margin: auto;
-        padding: 0.75rem;
-        font-size: $fs-32;
-      }
-    }
-
-    .about-photo {
-      width: auto;
-      padding: $sp-24;
-      background-color: var(--bg-primary);
-      box-shadow: $effect-shadow-default;
-
-      @media screen and (max-width: 60rem) {
-        margin-bottom: $sp-40;
-      }
-
-
-      img {
-        width: 100%;
-        padding: $sp-16;
-        border-radius: $fs-8;
-        box-shadow: $effect-shadow-active;
+        margin-top: $sp-8;
+        padding: $sp-8 $sp-16;
+        font-size: $fs-16;
+        border-radius: $sp-8;
+        color: var(--bg-constrast-light);
         background-color: var(--bg-primary);
+        box-shadow: $effect-shadow-active;
+        transition: 0.2s;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      input:focus,
+      textarea:focus {
+        font-size: $fs-18;
+      }
+
+      ::placeholder {
+        color: var(--cl-black-500);
+        opacity: 1;
+      }
+
+      legend {
+        margin-top: $sp-8;
+        font-size: $fs-14;
+        color: var(--cl-feedback-error);
       }
     }
+
+    button {
+      margin-top: $sp-8;
+      font-size: $fs-18;
+      font-weight: $fw-medium;
+      gap: $fs-16;
+
+      i {
+        font-size: $fs-24;
+      }
+    }
+
   }
 }
 
@@ -863,6 +886,7 @@ footer {
       display: flex;
       flex-direction: column;
       padding: $sp-24;
+      border-radius: $sp-16;
       background-color: var(--bg-primary);
       box-shadow: $effect-shadow-default;
 

@@ -1,28 +1,44 @@
 {
     "contentCard": [
         {
+            "name": "autista-live",
+            "linkPage": "/src/pages/autista-live.html",
+            "linkPageEn": "/src/pages/autista-live-en.html",
+            "imgLink": "/assets/projects/autista-live/cover.opti.webp",
+            "alt-img": "Capa projeto Autista Live",
+            "title": "Web App Autista Live",
+            "description": "Uma plataforma web que traz facilidade para pessoas com autismo comprovar seu diagnóstico de maneira simples.",
+            "descriptionEn": "A web platform that makes it easier for people with autism to verify their diagnosis."
+        },
+        {
             "name": "pop-cinema",
             "linkPage": "/src/pages/pop-cinema.html",
+            "linkPageEn": "/src/pages/pop-cinema-en.html",
             "imgLink": "/assets/projects/pop-cinema/cover-card.opti.webp",
             "alt-img": "Capa projeto pop cinema",
-            "title": "Aplicativo Pop Cinema",
-            "description": "Criar uma solução com base nos conhecimentos adquiridos durante os seis meses do curso de UX do Google"
+            "title": "App Mobo Pop Cinema",
+            "description": "Criar uma solução com base nos conhecimentos adquiridos durante os seis meses do curso de UX do Google.",
+            "descriptionEn": "Create a solution based on the knowledge acquired during the six-month Google UX course"
         },
         {
             "name": "Lit academy",
             "linkPage": "/src/pages/lit-academy.html",
+            "linkPageEn": "/src/pages/lit-academy-en.html",
             "imgLink": "/assets/projects/lit-academy/cover-card.opti.webp",
             "alt-img": "Capa projeto Lit academy",
             "title": "Landing Page Lit Academy",
-            "description": "Um desafio lançado na comunidade de design da Lit Academy onde iremos explorar o mundo das IAs"
+            "description": "Um desafio lançado na comunidade de design da Lit Academy onde iremos explorar o mundo das IAs.",
+            "descriptionEn": "A challenge issued in the Lit Academy design community where we will explore the world of AIs."
         },
         {
             "name": "Company Geradores",
             "linkPage": "/src/pages/company-geradores.html",
+            "linkPageEn": "/src/pages/company-geradores-en.html",
             "imgLink": "/assets/projects/company-geradores/cover-card.opti.webp",
             "alt-img": "Capa projeto Company Geradores",
             "title": "Site Company Geradores",
-            "description": "Web site institucional para uma empresa prestadora de serviços e manutenção especializada em grupos geradores."
+            "description": "Web site institucional para uma empresa prestadora de serviços e manutenção especializada em grupos geradores.",
+            "descriptionEn": "Corporate website for a service and maintenance company specialized in generator sets."
         }
     ]
 }

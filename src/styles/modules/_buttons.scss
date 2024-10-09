@@ -14,6 +14,7 @@
   box-shadow: $effect-shadow-default;
   cursor: pointer;
   transition: 0.2s ease;
+  text-wrap: nowrap;
 
   &:hover {
     box-shadow: $effect-shadow-hover;

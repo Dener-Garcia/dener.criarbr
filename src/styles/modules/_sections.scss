@@ -248,6 +248,7 @@ header {
       margin-top: $sp-16;
       font-size: $fs-20;
       color: var(--bg-constrast-light);
+      line-height: 140%;
     }
 
     a{
@@ -291,6 +292,7 @@ header {
     text-align: center;
     font-size: $fs-32;
     color: var(--bg-constrast-light);
+    letter-spacing: 2px;
 
     @media screen and (max-width: 60rem) {
       font-size: $fs-28;
@@ -348,6 +350,7 @@ header {
     p {
       color: var(--cl-black-300);
       margin-top: $sp-8;
+      line-height: 140%;
     }
   }
 
@@ -379,6 +382,7 @@ header {
     text-align: center;
     font-size: $fs-32;
     color: var(--bg-constrast-light);
+    letter-spacing: 2px;
 
     @media screen and (max-width: 60rem) {
       font-size: $fs-28;
@@ -405,7 +409,8 @@ header {
     margin-top: $sp-24;
     text-align: center;
     font-size: $fs-20;
-    color: var(--cl-black-300)
+    color: var(--cl-black-300);
+    line-height: 140%;
   }
 
   .grid-projects {
@@ -445,7 +450,8 @@ header {
       margin-top: $sp-8;
       text-align: left;
       font-size: $fs-16;
-      color: var(--cl-black-300)
+      color: var(--cl-black-300);
+      line-height: 140%;
     }
 
     a {
@@ -463,6 +469,7 @@ header {
     text-align: center;
     font-size: $fs-32;
     color: var(--bg-constrast-light);
+    letter-spacing: 2px;
 
     @media screen and (max-width: 60rem) {
       font-size: $fs-28;
@@ -493,7 +500,8 @@ header {
       margin-top: $sp-8;
       text-align: start;
       font-size: $fs-20;
-      color: var(--cl-black-300)
+      color: var(--cl-black-300);
+      line-height: 140%;
     }
   
   }
@@ -558,6 +566,7 @@ header {
             font-size: $fs-14;
             font-weight: $fw-medium;
             color: var(--cl-black-300);
+            line-height: 140%;
           }
         }
       }
@@ -616,6 +625,7 @@ header {
     text-align: center;
     font-size: $fs-32;
     color: var(--bg-constrast-light);
+    letter-spacing: 2px;
 
     @media screen and (max-width: 60rem) {
       font-size: $fs-28;
@@ -691,7 +701,8 @@ header {
         margin-top: $sp-16;
         margin-bottom: $sp-24;
         font-size: $fs-16;
-        color: var(--cl-black-300)
+        color: var(--cl-black-300);
+        line-height: 140%;
       }
 
       a {
@@ -726,6 +737,7 @@ header {
     text-align: center;
     font-size: $fs-32;
     color: var(--bg-constrast-light);
+    letter-spacing: 2px;
 
     @media screen and (max-width: 60rem) {
       font-size: $fs-28;
@@ -869,7 +881,8 @@ footer {
     margin-top: $sp-32;
     text-align: center;
     font-size: $fs-20;
-    color: var(--cl-black-300)
+    color: var(--cl-black-300);
+    line-height: 140%;
   }
 
   .grid-cards {
@@ -918,6 +931,7 @@ footer {
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
+        line-height: 140%;
       }
     }
   }
@@ -972,6 +986,7 @@ footer {
       font-weight: $fw-medium;
       color: var(--cl-black-200);
       padding: 0 $sp-16;
+      letter-spacing: 2px;
     }
 
     .customer {
@@ -983,6 +998,7 @@ footer {
       p {
         color: var(--bg-constrast-light);
         margin-bottom: $sp-8;
+        line-height: 140%;
       }
     }
   }
@@ -1023,6 +1039,7 @@ footer {
           margin-top: $sp-8;
           font-size: $fs-18;
           color: var(--cl-black-300);
+          line-height: 140%;
         }
       }
     }
